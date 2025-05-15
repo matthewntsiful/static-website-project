@@ -5,64 +5,22 @@
 }
 
 body {
-    background-image: url('./assets/img/background.jpg');
+    background-image: url('assets/img/background.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
-    position: relative;
 }
 
-.content-overlay {
-    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent overlay */
-    min-height: 100vh;
-    padding: 2rem;
-}
-
-.logo {
-    height: 80px;
-    margin-bottom: 2rem;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
-
-h1 {
-    color: #333;
-    font-size: 2.5rem;
-    margin: 1rem 0;
-}
-
-h2 {
-    color: #444;
-    margin-bottom: 1rem;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
-}
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    .content {
-        padding: 1rem;
-    }
-}
-body:after {
-    content: "Background: Mountain landscape";
+.corner-logo {
     position: absolute;
-    left: -999em;
+    top: 20px;
+    left: 20px;
+    max-width: 100px;  /* Adjust size here */
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+.corner-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
