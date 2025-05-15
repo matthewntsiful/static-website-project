@@ -1,0 +1,14 @@
+# Ignore Git files
+.git
+
+# Ignore OS files
+.DS_Store
+
+# Ignore local dependencies
+node_modules/
+
+# Ignore Markdown files
+*.md
+
+# Ignore hidden files and directories
+**/.*
