@@ -3,6 +3,7 @@
 [![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 
 ## Table of Contents
 
@@ -15,9 +16,10 @@
 - [Implementation Guide](#implementation-guide)
   - [Day 1: Git Repository Setup](#day-1-git-repository-setup)
   - [Day 2: Environment Configuration](#day-2-environment-configuration)
-  - [Day 3: Create Static Website](#day-3-create-a-simple-static-website)
+  - [Day 3: Create Static Website](#day-3-create-static-website)
   - [Day 4-5: Dockerization](#day-4-5-dockerization)
 - [AWS Deployment](#aws-deployment)
+- [GitHub Pages Deployment](#github-pages-deployment)
 - [Troubleshooting](#troubleshooting-guide)
 - [Further Reading](#further-reading)
 
@@ -31,6 +33,7 @@ The project has been successfully:
 
 - Built locally and tested for connectivity
 - Deployed to an AWS EC2 instance via containerization
+- Deployed to GitHub Pages for easy access
 - Verified for connectivity in the cloud environment
 
 ## Project Workflow Diagram
@@ -64,6 +67,7 @@ This diagram illustrates the flow from local development to cloud deployment, sh
 | Nginx | 1.21.6 (Alpine) | Web server for hosting static content |
 | Docker | 20.10.x | Containerization platform |
 | AWS EC2 | Ubuntu 20.04 LTS | Cloud hosting environment |
+| GitHub Pages | Latest | Static site hosting service |
 | Git | 2.30+ | Version control system |
 | Bash | 5.0+ | Automation scripting |
 | HTML/CSS | HTML5/CSS3 | Frontend static website content |
@@ -110,7 +114,7 @@ Before starting this project, ensure you have:
 **Skills Practiced:** Bash scripting, Linux package management  
 **Key Concepts:** `chmod +x`, `#!/bin/bash`, automation via Bash
 
-### Day 3: Create a Simple Static Website (⏱️ ~2-3 hours)
+### Day 3: Create Static Website (⏱️ ~2-3 hours)
 
 - Use HTML/CSS to build a basic homepage
 - Add this to your 'static-website-project' Git repo
@@ -271,11 +275,34 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For questions or feedback about this project, please open an issue in the GitHub repository.
 
+## GitHub Pages Deployment
+
+This project is also deployed on GitHub Pages for easy access and demonstration.
+
+### Live Demo
+
+🔗 [View Live Demo](https://matthewntsiful.github.io/static-website-project/)
+
+### GitHub Pages Setup
+
+The website is deployed directly from the repository using GitHub Pages:
+
+1. Static website files are placed in the root directory
+2. A `.nojekyll` file is added to prevent Jekyll processing
+3. GitHub Pages is configured to serve from the main branch
+
+To update the site:
+
+1. Make changes to the HTML, CSS, or image files
+2. Commit and push to the repository
+3. GitHub Pages will automatically rebuild and deploy the site
+
 ## Further Reading
 
 - [Nginx Documentation](https://nginx.org/en/docs/)
 - [Docker Documentation](https://docs.docker.com/)
 - [AWS EC2 User Guide](https://docs.aws.amazon.com/ec2/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Git Documentation](https://git-scm.com/doc)
 - [Bash Scripting Tutorial](https://www.gnu.org/software/bash/manual/bash.html)
 - [HTML/CSS - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
