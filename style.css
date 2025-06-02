@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.corner-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 100px;  /* Adjust size here */
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+.corner-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
